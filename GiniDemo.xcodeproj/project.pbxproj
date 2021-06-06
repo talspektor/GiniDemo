@@ -13,6 +13,14 @@
 		4385558B2669EA77009C389F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438555892669EA77009C389F /* Main.storyboard */; };
 		4385558D2669EA78009C389F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4385558C2669EA78009C389F /* Assets.xcassets */; };
 		438555902669EA78009C389F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4385558E2669EA78009C389F /* LaunchScreen.storyboard */; };
+		438555992669EB5A009C389F /* RedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438555982669EB5A009C389F /* RedCollectionViewCell.swift */; };
+		4385559B2669EB7A009C389F /* RedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4385559A2669EB7A009C389F /* RedCollectionViewCell.xib */; };
+		438555A02669EC30009C389F /* OrangeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385559E2669EC30009C389F /* OrangeCollectionViewCell.swift */; };
+		438555A12669EC30009C389F /* OrangeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4385559F2669EC30009C389F /* OrangeCollectionViewCell.xib */; };
+		438555A52669F099009C389F /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438555A42669F099009C389F /* APICaller.swift */; };
+		438555A92669F18B009C389F /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438555A82669F18B009C389F /* Numbers.swift */; };
+		438555AB2669F379009C389F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438555AA2669F379009C389F /* ViewModel.swift */; };
+		438555B02669FDBC009C389F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438555AF2669FDBC009C389F /* BaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		4385558C2669EA78009C389F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4385558F2669EA78009C389F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438555912669EA78009C389F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438555982669EB5A009C389F /* RedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCollectionViewCell.swift; sourceTree = "<group>"; };
+		4385559A2669EB7A009C389F /* RedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedCollectionViewCell.xib; sourceTree = "<group>"; };
+		4385559E2669EC30009C389F /* OrangeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4385559F2669EC30009C389F /* OrangeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrangeCollectionViewCell.xib; sourceTree = "<group>"; };
+		438555A42669F099009C389F /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		438555A82669F18B009C389F /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		438555AA2669F379009C389F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		438555AF2669FDBC009C389F /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,80 @@
 		438555822669EA77009C389F /* GiniDemo */ = {
 			isa = PBXGroup;
 			children = (
-				438555832669EA77009C389F /* AppDelegate.swift */,
-				438555852669EA77009C389F /* SceneDelegate.swift */,
+				438555A22669EFFE009C389F /* SupportinFiles */,
+				438555A72669F17B009C389F /* Model */,
+				438555A32669F070009C389F /* DataProvider */,
+				438555972669EB24009C389F /* Cells */,
+				438555AC2669F45D009C389F /* ViewModel */,
 				438555872669EA77009C389F /* ViewController.swift */,
 				438555892669EA77009C389F /* Main.storyboard */,
-				4385558C2669EA78009C389F /* Assets.xcassets */,
 				4385558E2669EA78009C389F /* LaunchScreen.storyboard */,
 				438555912669EA78009C389F /* Info.plist */,
 			);
 			path = GiniDemo;
+			sourceTree = "<group>";
+		};
+		438555972669EB24009C389F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4385559D2669EBE6009C389F /* OrangCell */,
+				4385559C2669EBD8009C389F /* RedCell */,
+				438555AF2669FDBC009C389F /* BaseCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4385559C2669EBD8009C389F /* RedCell */ = {
+			isa = PBXGroup;
+			children = (
+				438555982669EB5A009C389F /* RedCollectionViewCell.swift */,
+				4385559A2669EB7A009C389F /* RedCollectionViewCell.xib */,
+			);
+			path = RedCell;
+			sourceTree = "<group>";
+		};
+		4385559D2669EBE6009C389F /* OrangCell */ = {
+			isa = PBXGroup;
+			children = (
+				4385559E2669EC30009C389F /* OrangeCollectionViewCell.swift */,
+				4385559F2669EC30009C389F /* OrangeCollectionViewCell.xib */,
+			);
+			name = OrangCell;
+			sourceTree = "<group>";
+		};
+		438555A22669EFFE009C389F /* SupportinFiles */ = {
+			isa = PBXGroup;
+			children = (
+				438555832669EA77009C389F /* AppDelegate.swift */,
+				438555852669EA77009C389F /* SceneDelegate.swift */,
+				4385558C2669EA78009C389F /* Assets.xcassets */,
+			);
+			name = SupportinFiles;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		438555A32669F070009C389F /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				438555A42669F099009C389F /* APICaller.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		438555A72669F17B009C389F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				438555A82669F18B009C389F /* Numbers.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		438555AC2669F45D009C389F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				438555AA2669F379009C389F /* ViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +205,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4385559B2669EB7A009C389F /* RedCollectionViewCell.xib in Resources */,
 				438555902669EA78009C389F /* LaunchScreen.storyboard in Resources */,
+				438555A12669EC30009C389F /* OrangeCollectionViewCell.xib in Resources */,
 				4385558D2669EA78009C389F /* Assets.xcassets in Resources */,
 				4385558B2669EA77009C389F /* Main.storyboard in Resources */,
 			);
@@ -137,8 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438555992669EB5A009C389F /* RedCollectionViewCell.swift in Sources */,
+				438555A52669F099009C389F /* APICaller.swift in Sources */,
+				438555A92669F18B009C389F /* Numbers.swift in Sources */,
+				438555A02669EC30009C389F /* OrangeCollectionViewCell.swift in Sources */,
 				438555882669EA77009C389F /* ViewController.swift in Sources */,
 				438555842669EA77009C389F /* AppDelegate.swift in Sources */,
+				438555AB2669F379009C389F /* ViewModel.swift in Sources */,
+				438555B02669FDBC009C389F /* BaseCell.swift in Sources */,
 				438555862669EA77009C389F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
